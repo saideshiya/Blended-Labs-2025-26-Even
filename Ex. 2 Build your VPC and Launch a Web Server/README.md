@@ -107,21 +107,23 @@ I configured a user data script to automatically install Apache and deploy a web
 
 ### Screenshot 1: VPC and Subnet Details
 
-<img width="1598" height="696" alt="image" src="https://github.com/user-attachments/assets/36bee0cd-0bb7-4fc8-a8ba-5dd08f16a985" />
+<img width="1919" height="1026" alt="Screenshot 2026-02-24 104923" src="https://github.com/user-attachments/assets/e2120811-567a-49ae-b578-0f278c47232c" />
+
 
 
 ---
 
 ### Screenshot 2: EC2 Instance Running
 
-<img width="1595" height="711" alt="image" src="https://github.com/user-attachments/assets/fb0e1a93-58bd-463e-904f-4829c1de5d26" />
+<img width="1920" height="1200" alt="Screenshot (140)" src="https://github.com/user-attachments/assets/79ff47a7-0ef9-4502-ba4d-e0e62c2d861d" />
+
 
 
 ---
 
 ### Screenshot 3: Web Server Output in Browser
 
-<img width="1600" height="809" alt="image" src="https://github.com/user-attachments/assets/f0fa2eef-f9e2-46c0-a73a-043c4c44931a" />
+<img width="1920" height="1200" alt="Screenshot (141)" src="https://github.com/user-attachments/assets/a58aa133-3100-491f-b06d-d13f926ee310" />
 
 
 ---
