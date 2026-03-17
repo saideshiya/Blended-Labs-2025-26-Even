@@ -2,9 +2,9 @@
 
 ## Author
 
-* **Name**: ________________________________
-* **Register Number**: _____________________
-* **Date of Submission**: __________________
+* **Name**: SAI DESHIYA K
+* **Register Number**: 212224220084
+* **Date of Submission**: 17.03.2026
 
 ---
 
@@ -78,33 +78,75 @@ Reboot the EC2 instance and verify that the data stored in the EBS volume is sti
 
 ## Workflow (Student Explanation)
 
-(Write the steps you followed in your own words)
+First, I logged in to the AWS Management Console.
 
-1. ---
-2. ---
-3. ---
-4. ---
-5. ---
+I navigated to the EC2 Dashboard.
 
+I explored the Elastic Block Store (EBS) section under EC2.
+
+I observed different volume types such as General Purpose SSD (gp2/gp3), Provisioned IOPS SSD, Throughput Optimized HDD, and Cold HDD.
+
+I clicked on “Volumes” and selected “Create Volume.”
+
+I chose the required volume type (General Purpose SSD – gp3).
+
+I entered the desired storage size (for example, 8 GB).
+
+I selected the same Availability Zone as my running EC2 instance.
+
+I clicked on “Create Volume” to create the EBS volume.
+
+After the volume was created, I selected the volume and clicked on “Attach Volume.”
+
+I selected my running EC2 instance and attached the volume as a new device (for example, /dev/xvdf).
+
+I connected to my EC2 instance using SSH from the terminal.
+
+I checked the attached disk using the command lsblk to verify the new volume.
+
+I formatted the attached volume using the command: sudo mkfs -t ext4 /dev/xvdf
+
+I created a directory to mount the volume using: sudo mkdir /mnt/ebs
+
+I mounted the volume to the directory using: sudo mount /dev/xvdf /mnt/ebs
+
+I verified that the volume was mounted successfully using the df -h command.
+
+I created sample files inside the mounted directory using: sudo touch /mnt/ebs/sample.txt
+
+I stored some sample data inside the file.
+
+I rebooted the EC2 instance from the AWS Console.
+
+After rebooting, I reconnected to the instance using SSH.
+
+I checked the mounted directory and verified that the stored data was still available.
+
+This confirmed that the EBS volume provides persistent storage even after instance reboot.
 ---
 
 ## Output Screenshots (Attach 3)
 
 ### Screenshot 1: EBS Volume Created
+<img width="1920" height="1200" alt="Screenshot (172)" src="https://github.com/user-attachments/assets/63faa472-0a8d-4d51-9431-637decbc1388" />
 
-(Insert Screenshot Here)
+
 
 ---
 
 ### Screenshot 2: EBS Volume Attached to EC2
 
-(Insert Screenshot Here)
+<img width="1920" height="1200" alt="Screenshot (162)" src="https://github.com/user-attachments/assets/ca228ca6-88d6-4f46-bc74-0cb50d97437e" />
+<img width="1244" height="493" alt="image" src="https://github.com/user-attachments/assets/bf32a32f-6c32-42c3-a8ce-8015c895e0d9" />
+<img width="1259" height="517" alt="image" src="https://github.com/user-attachments/assets/8cf2a2c2-daee-4ed7-ad93-2f5a0dd03a0a" />
 
 ---
 
 ### Screenshot 3: Mounted Volume with Data
+<img width="1235" height="563" alt="image" src="https://github.com/user-attachments/assets/e12c1477-0b13-44ea-b143-297fd466bdbf" />
 
-(Insert Screenshot Here)
+<img width="1227" height="576" alt="image" src="https://github.com/user-attachments/assets/277a007b-70ba-4344-aa3f-116a7ac83267" />
+
 
 ---
 
